@@ -2,14 +2,12 @@
 
 class HelperDesconto
 {
-    public function ReturnProximoDescontoOuZero(
+    public function ReturnObjetoProximoDesconto(
         Desconto $proximoDesconto, 
         Orcamento $orcamento
     ) {
-        if(!empty($proximoDesconto)) {
+        if( ! empty($proximoDesconto)) {
             return $proximoDesconto->calculaDesconto($orcamento);
         }
-
-        return 0;
     }
 }

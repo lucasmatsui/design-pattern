@@ -10,7 +10,7 @@ class Desconto5Produtos extends HelperDesconto implements Desconto
             return $orcamento->getValorOrcamento() * 0.1;
         }
 
-        return $this->ReturnProximoDescontoOuZero($this->proximoDesconto, $orcamento);
+        return $this->ReturnObjetoProximoDesconto($this->proximoDesconto, $orcamento);
     }
 
     public function setProximoDesconto(Desconto $desconto)

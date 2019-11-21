@@ -1,7 +1,9 @@
-<?php 
+<?php
+
 
 class DescontoPara2000Reais extends HelperDesconto implements Desconto
 {
+
     private $proximoDesconto;
 
     public function calculaDesconto(Orcamento $orcamento)
@@ -10,7 +12,7 @@ class DescontoPara2000Reais extends HelperDesconto implements Desconto
             return $orcamento->getValorOrcamento() * 0.2;
         }
 
-        return $this->ReturnProximoDescontoOuZero($this->proximoDesconto, $orcamento);
+        return $this->ReturnObjetoProximoDesconto($this->proximoDesconto, $orcamento);
     }
 
     public function setProximoDesconto(Desconto $desconto)
