@@ -5,7 +5,7 @@ ini_set('display_errors', 1);
 require 'classes/Orcamento.php';
 require 'classes/services/CalculadoraDeImpostos.php';
 require 'classes/impostos/interfaces/Imposto.php';
-require 'classes/impostos/templates/TemplatesDeImpostoCondicional.php';
+require 'classes/impostos/templatesMethod/TemplatesDeImpostoCondicional.php';
 require 'classes/impostos/ICMS.php';
 require 'classes/impostos/ISS.php';
 require 'classes/impostos/KCS.php';
