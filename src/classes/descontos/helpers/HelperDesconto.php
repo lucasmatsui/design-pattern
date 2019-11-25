@@ -6,7 +6,7 @@ class HelperDesconto
         Desconto $proximoDesconto, 
         Orcamento $orcamento
     ) {
-        if( ! empty($proximoDesconto)) {
+        if( ! is_null($proximoDesconto)) {
             return $proximoDesconto->calculaDesconto($orcamento);
         }
     }

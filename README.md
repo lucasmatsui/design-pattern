@@ -6,3 +6,4 @@
 - Strategy
 - Chain Of Responsability
 - Template Method
+- Decorator

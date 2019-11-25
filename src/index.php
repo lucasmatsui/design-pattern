@@ -24,9 +24,10 @@ $calculadora = new CalculadoraDeImpostos();
 
 echo "<h1>Testes de Imposto:</h1>";
 
-echo "<div>ICMS: {$calculadora->calcula($orcamento, new ICMS())} </div>";
+echo "<div>ICMS: ".$calculadora->calcula($orcamento, new ICMS())."</div>";
 echo "<div>ISS: {$calculadora->calcula($orcamento, new ISS())} </div>";
 echo "<div>KCS: {$calculadora->calcula($orcamento, new KCS())} </div>";
+echo "<div>ICMS + ISS: ".$calculadora->calcula($orcamento, new ICMS(new ISS()))."</div>";
 echo "<hr/>";
 
 // Descontos 

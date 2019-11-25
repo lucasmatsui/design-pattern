@@ -2,14 +2,10 @@
 
 class ISS extends TemplatesDeImpostoCondicional
 {
-    // public function calcula(Orcamento $orcamento)
-    // {   
-    //     if ($orcamento->getValorOrcamento() > 300) {
-    //         return $orcamento->getValorOrcamento() * 0.15;
-    //     }
-
-    //     return $orcamento->getValorOrcamento() * 0.1;
-    // }
+    function __construct($imposto = null)
+    {
+        parent::__construct($imposto);
+    }
 
     public function condicionalTaxacaoMaxima(Orcamento $orcamento) 
     {
